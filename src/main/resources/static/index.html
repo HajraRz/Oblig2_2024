@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oblig2</title>
+</head>
+<body>
+<h1>Bestilling av kinobilletter</h1>
+<table>
+    <tr>
+        <td>Velg film</td>
+        <td><select id="velgFilm">
+            <option value="">Velg film her</option>
+
+            <option value="Ronja røverdatter">Ronja røverdatter</option>
+            <option value="Matilda">Matilda</option>
+            <option value="Charlie og sjokoladefabrikken">Charlie og sjokoladefabrikken</option>
+            <option value="Knerten">Knerten</option>
+            <option value="Ulvesommer">Ulvesommer</option>
+            <option value="Kutoppen">Kutoppen</option>
+            <option value="Nabospionen">Nabospionen</option>
+            <option value="Familien Bigfoot">Familien Bigfoot</option>
+        </select>
+        </td>
+        <td id="feilValg" style="color: red"></td>
+    </tr>
+
+    <tr>
+        <td>Antall</td>
+        <td><input type="text" size="1px" style="width: 30px" id="tall"></td>
+        <td id="feilTall" style="color: red" ></td>
+    </tr>
+
+    <tr>
+        <td>Fornavn</td>
+        <td><input type="text" id="forNavn"></td>
+        <td id="feilNavn" style="color: red"></td>
+    </tr>
+    <tr>
+        <td>Etternavn</td>
+        <td><input type="text" id="etterNavn"></td>
+        <td id="feilEtternavn" style="color: red"></td>
+    </tr>
+    <tr>
+        <td>Telefonnr</td>
+        <td><input type="text" id="telefonNr"></td>
+        <td id="feilTlfNr" style="color: red"></td>
+    </tr>
+    <tr>
+        <td>Epost</td>
+        <td><input type="text" id="epost"></td>
+        <td id="feilEpost" style="color: red"></td>
+    </tr>
+</table>
+<button onclick="kjopBillett()">Kjøp billett</button>
+
+<h2>Alle billetter</h2>
+<div id="kjopBillett"></div>
+
+<button onclick="slettAlle()">Slett alle billettene</button>
+<div id="slett"></div>
+</body>
+</html>
